@@ -13,10 +13,12 @@
 		6AFD420223826E5700F8FC63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFD420023826E5700F8FC63 /* Main.storyboard */; };
 		6AFD420423826E5800F8FC63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AFD420323826E5800F8FC63 /* Assets.xcassets */; };
 		6AFD420723826E5800F8FC63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFD420523826E5800F8FC63 /* LaunchScreen.storyboard */; };
+		6AFD4211238272B900F8FC63 /* app_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AFD420F238272B900F8FC63 /* app_icon@3x.png */; };
+		6AFD4212238272B900F8FC63 /* app_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AFD4210238272B900F8FC63 /* app_icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6AFD41F723826E5700F8FC63 /* MagicEightBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicEightBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AFD41F723826E5700F8FC63 /* Magic 8-Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Magic 8-Ball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AFD41FA23826E5700F8FC63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AFD41FC23826E5700F8FC63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6AFD41FE23826E5700F8FC63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		6AFD420323826E5800F8FC63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AFD420623826E5800F8FC63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AFD420823826E5800F8FC63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AFD420F238272B900F8FC63 /* app_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app_icon@3x.png"; sourceTree = "<group>"; };
+		6AFD4210238272B900F8FC63 /* app_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app_icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,13 +46,14 @@
 			children = (
 				6AFD41F923826E5700F8FC63 /* MagicEightBall */,
 				6AFD41F823826E5700F8FC63 /* Products */,
+				6AFD420E238272B900F8FC63 /* magic_app_icon */,
 			);
 			sourceTree = "<group>";
 		};
 		6AFD41F823826E5700F8FC63 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6AFD41F723826E5700F8FC63 /* MagicEightBall.app */,
+				6AFD41F723826E5700F8FC63 /* Magic 8-Ball.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +70,15 @@
 				6AFD420823826E5800F8FC63 /* Info.plist */,
 			);
 			path = MagicEightBall;
+			sourceTree = "<group>";
+		};
+		6AFD420E238272B900F8FC63 /* magic_app_icon */ = {
+			isa = PBXGroup;
+			children = (
+				6AFD420F238272B900F8FC63 /* app_icon@3x.png */,
+				6AFD4210238272B900F8FC63 /* app_icon@2x.png */,
+			);
+			path = magic_app_icon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,7 +98,7 @@
 			);
 			name = MagicEightBall;
 			productName = MagicEightBall;
-			productReference = 6AFD41F723826E5700F8FC63 /* MagicEightBall.app */;
+			productReference = 6AFD41F723826E5700F8FC63 /* Magic 8-Ball.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -126,7 +140,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AFD420723826E5800F8FC63 /* LaunchScreen.storyboard in Resources */,
+				6AFD4212238272B900F8FC63 /* app_icon@2x.png in Resources */,
 				6AFD420423826E5800F8FC63 /* Assets.xcassets in Resources */,
+				6AFD4211238272B900F8FC63 /* app_icon@3x.png in Resources */,
 				6AFD420223826E5700F8FC63 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,12 +303,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 92W447XUPX;
 				INFOPLIST_FILE = MagicEightBall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.MagicEightBall;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.MagicEightBalll;
+				PRODUCT_NAME = "Magic 8-Ball";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,12 +322,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 92W447XUPX;
 				INFOPLIST_FILE = MagicEightBall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.MagicEightBall;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.MagicEightBalll;
+				PRODUCT_NAME = "Magic 8-Ball";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
